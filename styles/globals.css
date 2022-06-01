@@ -105,18 +105,18 @@ width: 100%;
 .product-card{
  cursor: pointer;
   transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
  color: #324d67;
 
 }
 .product-card:hover{
-  transform: scale(1.1,1.1)
+  transform: scale(1.05,1.05)
 }
 .product-image{
   border-radius: 15px;
  background-color: #ebebeb;
   transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 
 .product-name{
@@ -129,7 +129,7 @@ width: 100%;
 }
 
 .hero-banner-container{
-  padding: 100px 40px;
+  padding: 100px 70px;
   background-color: #dcdcdc;
   border-radius: 15px;
   position: relative;
@@ -167,7 +167,7 @@ width: 100%;
 .hero-banner-image{
   position: absolute;
   top: 0%;
-  right:20%;
+  right:30%;
   width: 450px;
   height: 450px;
 }
@@ -249,7 +249,7 @@ text-align: end;
   /* top: -35%;
   left: 8%; */
   top: -25%;
-  left: 25%;
+  left: 30%;
 }
 .banner-desc .right{
   line-height: 1.4;
@@ -623,8 +623,8 @@ margin-top: 160px;
     height: 560px;
   }
   .hero-banner-image{
-    width: 77%;
-    height: 62%;
+    width: 67%;
+    height: 60%;
     top: -2%;
     right: -6%;
   }
@@ -633,10 +633,10 @@ margin-top: 160px;
     margin-top: 80px;
   }
   .footer-banner-image{
-    width: 77%;
-    left: 30%;
+    width: 55%;
+    left: 20%;
     top: 6%;
-    height: 56%
+    height: 50%
   }
   .banner-desc .left h3{
     font-weight: 900;

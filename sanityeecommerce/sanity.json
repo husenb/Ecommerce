@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "sanity_ecommerce"
+    "name": "sanitye_ecommerce"
   },
   "api": {
-    "projectId": "uldjo0je",
+    "projectId": "gidiz5at",
     "dataset": "production"
   },
   "plugins": [

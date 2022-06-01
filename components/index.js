@@ -1,7 +1,8 @@
-export{default as Navbar} from '../components/Navbar'
-export{default as Cards} from '../components/Cards'
-export{default as Footer} from '../components/Footer'
-export{default as FooterBanner} from '../components/FooterBanner'
-export{default as Layout} from '../components/Layout'
-export{default as Product} from '../components/Product'
-export{default as Herobanner} from '../components/Herobanner'
+
+export { default as Footer } from './Footer';
+export { default as Layout } from './Layout';
+export { default as Navbar } from './Navbar';
+export { default as Product } from './Product';
+export { default as HeroBanner } from './HeroBanner';
+export { default as FooterBanner } from './FooterBanner';
+export { default as Cart } from './Cart';

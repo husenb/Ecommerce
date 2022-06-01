@@ -1,23 +1,38 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import { client } from "../lib/client";
 
-import { Navbar, HeroBanner, Product } from '../components'
+import { Navbar, HeroBanner, Product, FooterBanner, Footer } from "../components";
+import product from "../sanityeecommerce/schemas/product";
 
-
-const Home= ()=> {
+const Home = ({ products, bannerData }) => {
   return (
     <>
-   
-    <div className="products-heading">
-      <h2>Best Seller Products</h2>
-      <p>speaker There are many variations passages</p>
-    </div>
-    <div className="products-container">
-     {
-       ['Speakers', ' Headphones'].map((product)=>product)
-     }
-    </div>
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+  
+      <div className="products-heading">
+        <h2>Best Seller Products</h2>
+        <p>These are some trendings</p>
+      </div>
+      <div className="products-container">
+        {products?.map((product) => <Product key={product._id} product={product}/>)}
+      </div>
+      <FooterBanner footerbanner={bannerData && bannerData[0]} />
+      <Footer/>
     </>
-  )
-}
+  );
+};
+export const getServerSideProps = async () => {
+  const query = '*[_type=="product"]';
+  const products = await client.fetch(query);
+
+  const bannerquery = '*[_type=="banner"]';
+  const bannerData = await client.fetch(bannerquery);
+  return {
+    props: {
+      products,
+      bannerData,
+    },
+  };
+};
 export default Home;
