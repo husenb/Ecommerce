@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <Head>
-        <title>Hussu Store</title>
+        <title>WebPal Store</title>
       </Head>
       <header>
         <Navbar />
